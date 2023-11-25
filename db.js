@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-const uri = "mongodb://root:example@db:27017/";
+
 const connectDB = async () => {
     try {
-        await mongoose.connect(uri , 
+        await mongoose.connect('mongodb://root:example@db:27017/' , 
         {useNewUrlParser: true, 
         useUnifiedTopology: true
     });
